@@ -110,7 +110,7 @@ The analysis also confirmed Glucose, BMI, and Age as the most relevant predictor
 However, the results are influenced by some limitations, including the relatively small dataset, class imbalance, and the use of simplified preprocessing approaches. These factors impact the model’s ability to generalize and accurately capture more complex patterns in the data.
 
 ### Confusion Matrix
-![Confusion Matrix](Images/confussion_matrix.png)
+![Confusion Matrix](Images/confusion_matrix.png)
 
 The confusion matrices highlight the performance differences between the two models.
 
