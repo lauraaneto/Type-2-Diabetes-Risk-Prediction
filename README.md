@@ -43,6 +43,17 @@ BMI and Age also presented significant relationships
 
 Statistical tests (Pearson correlation) confirmed that these relationships are statistically significant (p < 0.05).
 
+### Features vs Outcome
+![Features vs Outcome](Images/features_vs_outcome.png)
+
+The boxplots reveal clear differences in the distribution of key variables between diabetic and non-diabetic patients.
+
+- **Glucose** shows the most significant separation, with diabetic patients presenting consistently higher values and a higher median, indicating strong predictive relevance.
+- **BMI** also displays a noticeable upward shift in diabetic cases, although with some overlap between the groups.
+- **Age** demonstrates a moderate association, with diabetic patients tending to be older on average.
+
+Despite some overlap between classes, these patterns suggest that higher values in these features are associated with increased diabetes risk, supporting their importance in the predictive models.
+
 ## Models Used
 Two machine learning models were trained:
 * Logistic Regression
@@ -97,4 +108,13 @@ A deeper evaluation reveals important differences: while Logistic Regression pre
 The analysis also confirmed Glucose, BMI, and Age as the most relevant predictors, consistent with established clinical knowledge and reinforcing the reliability of the findings.
 
 However, the results are influenced by some limitations, including the relatively small dataset, class imbalance, and the use of simplified preprocessing approaches. These factors impact the model’s ability to generalize and accurately capture more complex patterns in the data.
+
+### Confusion Matrix
+![Confusion Matrix](Images/confussion_matrix.png)
+
+The confusion matrices highlight the performance differences between the two models.
+
+Logistic Regression correctly identified 82 non-diabetic and 34 diabetic patients, while Random Forest correctly classified 78 non-diabetic and 37 diabetic cases. Notably, Random Forest achieved a higher number of true positives (37 vs 34), indicating a better ability to detect diabetic patients.
+
+However, this comes at the cost of a slightly higher number of false positives. Both models show some difficulty in identifying all diabetic cases, which is reflected in the presence of false negatives, an important limitation in medical prediction tasks.
 
